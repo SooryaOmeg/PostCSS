@@ -1,0 +1,338 @@
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm init -y
+Wrote to C:\Main Files\Soorya\Learn Programming\Postcss\package.json:
+
+{
+  "name": "postcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
+
+
+
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm i -D postcss postcss-cli
+
+added 53 packages, and audited 54 packages in 5s
+
+13 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm run build:css           
+
+> postcss@1.0.0 build:css
+> postcss src/input.css -o dist/style.css
+
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm run build:css
+
+> postcss@1.0.0 build:css
+> postcss src/input.css -o dist/style.css
+
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm i -D autoprefixer
+
+added 9 packages, and audited 63 packages in 3s
+
+18 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm i -D autoprefixer
+
+up to date, audited 63 packages in 1s
+
+18 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm run build:css    
+
+> postcss@1.0.0 build:css
+> postcss src/input.css -o dist/style.css
+
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm run build:css
+
+> postcss@1.0.0 build:css
+> postcss src/input.css -o dist/style.css
+
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm run build:css
+
+> postcss@1.0.0 build:css
+build:css
+
+> postcss@1.0.0 build:css
+> postcss src/input.css -o dist/style.css
+> postcss@1.0.0 build:css
+> postcss src/input.css -o dist/style.css
+
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm run watch:css
+
+> postcss@1.0.0 watch:css
+> postcss src/input.css -o dist/style.css -w
+
+CssSyntaxError: C:\Main Files\Soorya\Learn Programming\Postcss\src\input.css:10:5: Unknown word co
+
+   8 |
+   9 | h1{
+> 10 |     co
+     |     ^
+  11 | }
+
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm i -D postcss-preset-env
+
+added 76 packages, and audited 139 packages in 6s
+
+87 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm run watch:css
+
+> postcss@1.0.0 watch:css
+
+
+   8 | :--heading {
+   9 |     color: purple;
+> 10 |     fon
+     |     ^
+  11 | }
+  12 |
+
+CssSyntaxError: C:\Main Files\Soorya\Learn Programming\Postcss\src\input.css:8:1: Unclosed block
+
+   6 | }
+   7 |
+>  8 | :--heading {
+     | ^
+   9 |     @media (--viewport-small) {
+  10 |     color: purple;
+
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm i -D precss
+npm warn deprecated flatten@1.0.3: flatten is deprecated in favor of utility frameworks such as lodash.
+npm warn deprecated precss@4.0.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
+added 102 packages, and audited 241 packages in 10s
+
+  run `npm fund` for details
+
+41 moderate severity vulnerabilities
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm uninstall -D precss
+
+removed 102 packages, and audited 139 packages in 844ms
+
+87 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm i -D postcss-simple-vars
+
+added 1 package, and audited 140 packages in 1s
+
+88 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm run watch:css           
+
+> postcss@1.0.0 watch:css
+> postcss src/input.css -o dist/style.css -w
+
+CssSyntaxError: postcss-simple-vars: C:\Main Files\Soorya\Learn Programming\Postcss\src\input.css:6:5: Undefined variable $light-color
+
+  4 |
+  5 | body {
+> 6 |     background-color: $light-color;;
+    |     ^
+  7 | }
+  8 |
+
+CssSyntaxError: postcss-simple-vars: C:\Main Files\Soorya\Learn Programming\Postcss\src\input.css:6:5: Undefined variable $light-color
+
+  4 |
+  5 | body {
+> 6 |     background-color: $light-color;;
+    |     ^
+  7 | }
+  8 |
+
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm i -D postcss-import
+
+added 7 packages, and audited 147 packages in 2s
+
+92 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm run watch:css      
+
+> postcss@1.0.0 watch:css
+> postcss src/input.css -o dist/style.css -w
+
+CssSyntaxError: postcss-simple-vars: C:\Main Files\Soorya\Learn Programming\Postcss\src\input.css:7:5: Undefined variable $lightColor
+
+  5 |
+  6 | body {
+> 7 |     background-color: $lightColor;
+    |     ^
+  8 | }
+  9 |
+
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm run watch:css
+
+> postcss@1.0.0 watch:css
+> postcss src/input.css -o dist/style.css -w
+
+CssSyntaxError: postcss-simple-vars: C:\Main Files\Soorya\Learn Programming\Postcss\src\input.css:7:5: Undefined variable $lightColor
+
+  5 |
+  6 | body {
+> 7 |     background-color: $lightColor;
+    |     ^
+  8 | }
+  9 |
+
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm run watch:css
+
+> postcss@1.0.0 watch:css
+> postcss src/input.css -o dist/style.css -w
+
+CssSyntaxError: postcss-simple-vars: C:\Main Files\Soorya\Learn Programming\Postcss\src\input.css:7:5: Undefined variable $lightColor
+
+  5 |
+  6 | body {
+> 7 |     background-color: $lightColor;
+    |     ^
+  8 | }
+  9 |
+
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm run watch:css
+
+> postcss@1.0.0 watch:css
+> postcss src/input.css -o dist/style.css -w
+
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm i -D postcss-assests 
+npm error code E404
+npm error 404 Not Found - GET https://registry.npmjs.org/postcss-assests - Not found
+npm error 404
+npm error 404  'postcss-assests@*' is not in this registry.
+npm error 404
+npm error 404 Note that you can also install from a
+npm error 404 tarball, folder, http url, or git url.
+npm error A complete log of this run can be found in: C:\Users\soory\AppData\Local\npm-cache\_logs\2025-07-12T14_26_43_788Z-debug-0.log
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm uninstall postcss-assests 
+
+up to date, audited 147 packages in 950ms
+
+92 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm i -D postcss-assets       
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+
+added 24 packages, and audited 171 packages in 9s
+
+93 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm uninstall postcss-assets 
+
+removed 24 packages, and audited 147 packages in 896ms
+
+92 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm i -D postcss-assets      
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+
+added 24 packages, and audited 171 packages in 2s
+
+93 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm run watch:css             
+
+> postcss@1.0.0 watch:css
+> postcss src/input.css -o dist/style.css -w
+
+Error: EISDIR: illegal operation on a directory, read: C:\Main Files\Soorya\Learn Programming\Postcss
+    at C:\Main Files\Soorya\Learn Programming\Postcss\src\card.css:8:5
+    at C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\assets\lib\size.js:28:33
+From previous event:
+    at C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\assets\lib\size.js:27:15
+From previous event:
+    at module.exports [as size] (C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\assets\lib\size.js:22:6)
+    at Assets.<computed> [as size] (C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\assets\lib\index.js:16:28)
+    at C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\postcss-assets\lib\index.js:49:35  
+    at process.processImmediate (node:internal/timers:505:21)
+From previous event:
+    at measure (C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\postcss-assets\lib\index.js:40:32)
+    at width (C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\postcss-assets\lib\index.js:88:18)
+    at C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\postcss-functions\dest\lib\transformer.js:31:27
+    at then (C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\postcss-functions\dest\lib\helpers.js:24:10)
+    at transformNode (C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\postcss-functions\dest\lib\transformer.js:30:28)
+    at C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\postcss-functions\dest\lib\transformer.js:19:19
+    at walk (C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\postcss-value-parser\lib\walk.js:7:16)
+    at ValueParser.walk (C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\postcss-value-parser\lib\index.js:18:3)
+    at transformString (C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\postcss-functions\dest\lib\transformer.js:18:57)
+    at transformDecl (C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\postcss-functions\dest\lib\transformer.js:61:29)
+    at Declaration (C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\postcss-functions\dest\index.js:19:45)
+    at LazyResult.visitTick (C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\postcss\lib\lazy-result.js:479:16)
+    at LazyResult.runAsync (C:\Main Files\Soorya\Learn Programming\Postcss\node_modules\postcss\lib\lazy-result.js:307:30)
+    at async Promise.all (index 0) {
+  postcssNode: <ref *2> Declaration {
+    raws: { before: '\r\n    ', between: ' : ' },
+    type: 'decl',
+    parent: <ref *1> Rule {
+      raws: [Object],
+      type: 'rule',
+      nodes: [Array],
+      source: [Object],
+      selector: '.card',
+      lastEach: 3,
+      indexes: [Object],
+      parent: [Root],
+      proxyCache: [Circular *1],
+      Symbol(isClean): false,
+      Symbol(my): true
+    },
+    source: { input: [Input], start: [Object], end: [Object] },
+    prop: 'width',
+    value: "width('')",
+    proxyCache: [Circular *2],
+    Symbol(isClean): true,
+    Symbol(my): true
+  }
+}
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm i -D cssnano 
+
+added 53 packages, and audited 224 packages in 7s
+
+103 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Main Files\Soorya\Learn Programming\Postcss> npm run watch:css
+
+> postcss@1.0.0 watch:css
+> postcss src/input.css -o dist/style.css -w
+

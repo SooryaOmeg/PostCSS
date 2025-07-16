@@ -1,0 +1,14 @@
+.card {
+    padding: 20px;
+    margin-top: 20px;
+    border: $borderWidth solid $borderColor;
+    background-image: resolve('download.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width : width('download.jpg');
+    height : height('download.jpg');
+
+    h2 {
+        color: crimson;
+    }
+}
